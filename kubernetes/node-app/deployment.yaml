@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: node-app
+  namespace: default
+  labels:
+    app: node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+      - name: node-app
+        image: agencyrevolution/demo-node-app
+        ports:
+        - containerPort: 80

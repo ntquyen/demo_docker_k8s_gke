@@ -1,0 +1,8 @@
+# Go
+vendor
+
+# Node
+node_modules
+
+*.sublime-project
+*.sublime-workspace
