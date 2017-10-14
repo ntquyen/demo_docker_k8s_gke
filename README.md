@@ -34,3 +34,8 @@ gcloud beta container clusters create test-cluster \
       --max-nodes=2 
 ```
 
+
+** CLI to get authenticated to access cluster at local **
+```
+gcloud container clusters get-credentials test-cluster --zone=asia-southeast1-a
+```
