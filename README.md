@@ -17,5 +17,20 @@ gcloud container clusters create test-cluster \
       --zone="asia-southeast1-a" \
       --machine-type="n1-standard-1" \
       --num-nodes=1 \
-      --disk-size=30
+      --disk-size=30 
 ```
+
+
+**Create cluster to enable auto-scaling**
+
+```
+gcloud beta container clusters create test-cluster \
+      --zone="asia-southeast1-a" \
+      --machine-type="n1-standard-1" \
+      --num-nodes=1 \
+      --disk-size=30 \
+      --enable-autoscaling \
+      --min-nodes=1 \
+      --max-nodes=2 
+```
+

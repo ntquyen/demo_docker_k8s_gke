@@ -3,7 +3,7 @@ FROM agencyrevolution/go:1.8.4-alpine3.6
 MAINTAINER quyen@agencyrevolution.com
 
 ENV PORT=80
-ENV WORKDIR=$GOPATH/src/app/go-app
+ENV WORKDIR=$GOPATH/src/app
 
 WORKDIR $WORKDIR
 
